@@ -14,16 +14,17 @@ document.addEventListener('mousedown', function () {
 });
 
 document.addEventListener('mouseup', function (e) {
-    let div = document.createElement('div');
-    div.innerHTML = " <img src='im.jpg' >";
-    document.body.append(div);
+    let flag = document.createElement('div');
+    flag.className = 'flag'
+    flag.innerHTML = " <img src='img.png' >";
+    document.body.append(flag); 
 
-    div.style.top = e.pageY + 'px';
-    div.style.left = e.pageX + 'px';
+    flag.style.position = 'absolute';
+    flag.style.top = e.pageY + 'px';
+    flag.style.left = e.pageX + 'px';
+
     x.style.backgroundColor = 'red';
     y.style.backgroundColor = 'red';
     x.style.width = '1px';
     y.style.height = '1px'
-    
-   
 });

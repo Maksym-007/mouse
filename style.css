@@ -1,4 +1,5 @@
-body {
+.conteiner {
+  height: 100vh;
   background-image: url(bgmap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,15 +7,14 @@ body {
 #A {
   width: 1px;
   height: 100%;
-  background-color: red;
   left: 50%;
 }
 #B {
   height: 1px;
   width: 100%;
-  background-color: red;
   top: 50%;
 }
-div {
-    position: absolute;
+.xy {
+  background-color: red;
+  position: absolute;
 }
